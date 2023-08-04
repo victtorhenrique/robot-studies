@@ -10,7 +10,5 @@ Abrir navegador
 Fechar navegador
     Close Browser
 
-
 Tira Print
-    Sleep    1s
     Capture Page Screenshot

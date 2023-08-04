@@ -7,6 +7,7 @@ Library     DebugLibrary
 ### keywords ###
 
 Resource    ../auto/keywords/kws_login.robot
+Resource    ../auto/keywords/kws_estudo2.robot
 
 ### Variaveis ###
 
