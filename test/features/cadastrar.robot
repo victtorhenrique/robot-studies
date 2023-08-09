@@ -11,5 +11,5 @@ Test Teardown    Fechar navegador
 Cenario 1: Cadastro Usuario
     [Tags]    tc1
     Dado Acessar a pagina inicial de cadastro
-    Quando Realizar cadastro do usuario "fulano 5" email "fulano5@qa.com" e senha "teste"
+    Quando Realizar cadastro do usuario "fulano 6" email "fulano6@qa.com" e senha "teste"
     Então Validar mensagem de sucesso "Cadastro realizado com sucesso"
