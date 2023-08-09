@@ -1,6 +1,6 @@
 *** Settings ***
 
-Resource    ../../src/config/package.robot
+Resource    ../../src/main.resource
 
 *** Keywords ***
 Abrir navegador

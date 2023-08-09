@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Aqui estão as keywords relevantes para a automação de login
 
-Resource    ../../config/package.robot
+Resource    ../../src/main.resource
 
 
 *** Keywords ***

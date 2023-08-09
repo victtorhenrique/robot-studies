@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Iframes in Robot Framework
 
-Resource    ../../config/package.robot
+Resource    ../../src/main.resource
 
 *** Keywords ***
 Acessar pagina inicial the internal
