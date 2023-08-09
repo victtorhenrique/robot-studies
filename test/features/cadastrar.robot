@@ -1,4 +1,4 @@
-language:pt-br
+language: pt-br
 *** Settings ***
 Documentation    Este caso arquivo contem os BDD dos casos de teste de login
 
@@ -10,6 +10,6 @@ Test Teardown    Fechar navegador
 *** Test Cases ***
 Cenario 1: Cadastro Usuario
     [Tags]    tc1
-    Acessar a pagina inicial de cadastro
-    Realizar cadastro do usuario "fulano 3" email "fulano3@qa.com" e senha "teste"
-    Validar mensagem de sucesso "Cadastro realizado com sucesso"
+    Dado Acessar a pagina inicial de cadastro
+    Quando Realizar cadastro do usuario "fulano 3" email "fulano3@qa.com" e senha "teste"
+    Então Validar mensagem de sucesso "Cadastro realizado com sucesso"

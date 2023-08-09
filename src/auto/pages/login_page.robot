@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    Aqui estão os objetos mapeados em variáveis da homepage do site
 
-
 *** Variables ***
 ${CAMPO_NOME}      id=nome
 ${CAMPPO_EMAIL}    id=email
