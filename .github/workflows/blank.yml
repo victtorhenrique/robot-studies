@@ -28,7 +28,7 @@ jobs:
     - name: Copy log files
       run: |
         mkdir -p ${{ github.workspace }}/logs_backup  # Cria um diretório para backup dos logs
-        cp ${{ github.workspace }}/logs/*.log ${{ github.workspace }}/logs_backup/  # Copia os arquivos de log para o diretório de backup
+        cp -r ${{ github.workspace }}/logs/* ${{ github.workspace }}/logs_backup/  # Copia os arquivos de log para o diretório de backup
 
     - name: Compress log files
       run: |
