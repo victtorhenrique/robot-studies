@@ -25,19 +25,19 @@ jobs:
       run: |
         robot --outputdir=${{ github.workspace }}/logs ${{ github.workspace }}/test/features/  # Define o diretório de saída para os logs
 
-    - name: Copy log files
-      run: |
-        mkdir -p ${{ github.workspace }}/logs_backup  # Cria um diretório para backup dos logs
-        cp -r ${{ github.workspace }}/logs/* ${{ github.workspace }}/logs_backup/  # Copia os arquivos de log para o diretório de backup
+    # - name: Copy log files
+    #   run: |
+    #     mkdir -p ${{ github.workspace }}/logs_backup  # Cria um diretório para backup dos logs
+    #     cp -r ${{ github.workspace }}/logs/* ${{ github.workspace }}/logs_backup/  # Copia os arquivos de log para o diretório de backup
 
-    - name: Compress log files
-      run: |
-        cd ${{ github.workspace }}/logs_backup/
-        zip -r logs_backup.zip .  # Compacta os arquivos de log em um arquivo zip
+    # - name: Compress log files
+    #   run: |
+    #     cd ${{ github.workspace }}/logs_backup/
+    #     zip -r logs_backup.zip .  # Compacta os arquivos de log em um arquivo zip
 
     - name: Upload log files
       uses: actions/upload-artifact@v3
       if: always()
       with:
         name: logs
-        path: ${{ github.workspace }}/logs_backup/logs_backup.zip
+        path: ${{ github.workspace }}/logs
