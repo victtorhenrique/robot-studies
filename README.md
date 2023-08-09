@@ -1,6 +1,6 @@
-# Robot Framework com SeleniumLibrary
+# Robot Framework com SeleniumLibrary e Integração GitHub Actions
 
-Este repositório contém exemplos e recursos para começar a usar o Robot Framework com a biblioteca SeleniumLibrary, permitindo a automação de testes de interface de usuário em aplicações da web. O Robot Framework é uma estrutura de automação de testes de código aberto que permite escrever testes de forma fácil e legível, enquanto a biblioteca SeleniumLibrary fornece as ferramentas para interagir com navegadores da web e testar aplicativos da web.
+Este repositório contém exemplos e recursos para começar a usar o Robot Framework com a biblioteca SeleniumLibrary, permitindo a automação de testes de interface de usuário em aplicações da web. Além disso, foi configurada a integração com o GitHub Actions, permitindo a execução automatizada dos testes em um ambiente de integração contínua. O Robot Framework é uma estrutura de automação de testes de código aberto que permite escrever testes de forma fácil e legível, enquanto a biblioteca SeleniumLibrary fornece as ferramentas para interagir com navegadores da web e testar aplicativos da web.
 
 ## Pré-requisitos
 
@@ -66,6 +66,17 @@ robot teste/features/cadastrar.robot
 ```
 robot test/features/
 ```
+
+## Integração GitHub Actions
+A integração com o GitHub Actions foi configurada para executar os testes automaticamente sempre que você fizer um push para o repositório. O fluxo de trabalho (workflow) pode ser encontrado no arquivo .github/workflows/test.yml.
+
+O fluxo de trabalho realiza o seguinte:
+
+1. Configura o ambiente Python.
+2. Instala as dependências do projeto.
+3. Executa os testes automatizados usando o Robot Framework.
+4. Efetua a geração dos logs e reports no Workspace do projeto.
+
 
 ## Contribuindo
 
