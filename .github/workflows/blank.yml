@@ -23,7 +23,7 @@ jobs:
 
     - name: Run Robot Framework tests
       run: |
-        robot --exitonerror --outputdir=${{ github.workspace }}/logs ${{ github.workspace }}/test/features/  # Define o diretório de saída para os logs
+        robot --outputdir=${{ github.workspace }}/logs ${{ github.workspace }}/test/features/  # Define o diretório de saída para os logs
 
     - name: Copy log files
       run: |
@@ -36,7 +36,8 @@ jobs:
         zip -r logs_backup.zip .  # Compacta os arquivos de log em um arquivo zip
 
     - name: Upload log files
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
+      if: always()
       with:
         name: logs
         path: ${{ github.workspace }}/logs_backup/logs_backup.zip
