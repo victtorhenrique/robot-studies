@@ -4,7 +4,7 @@ Resource    ../../src/config/package.robot
 
 *** Keywords ***
 Abrir navegador
-    Open Browser    about:blank    chrome
+    Open Browser    about:blank    headlesschrome
     Set Browser Implicit Wait    30s
     Maximize Browser Window
 
