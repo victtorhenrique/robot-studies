@@ -2,7 +2,6 @@
 Documentation    Iframes in Robot Framework
 
 Resource    ../../config/package.robot
-Library    ../../../venv/lib/site-packages/robot/libraries/XML.py
 
 *** Keywords ***
 Acessar pagina inicial the internal
