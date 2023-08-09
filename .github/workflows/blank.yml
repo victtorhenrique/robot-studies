@@ -22,4 +22,4 @@ jobs:
 
     - name: Run Robot Framework tests
       run: |
-        robot path/to/your/tests  # Substitua pelo caminho correto para seus testes
+        robot test/features  # Substitua pelo caminho correto para seus testes
