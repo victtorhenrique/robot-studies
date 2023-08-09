@@ -6,14 +6,14 @@ Library     DebugLibrary
 
 ### keywords ###
 
-Resource    ./keywords/kws_login.robot
-Resource    ./keywords/kws_estudo2.robot
-Resource    ./keywords/kws_estudo3.robot
+Resource    ./keywords/kws_login.resource
+Resource    ./keywords/kws_estudo2.resource
+Resource    ./keywords/kws_estudo3.resource
 
 ### Variaveis ###
 
-Resource    ./pages/login_page.robot
-Resource    ./pages/estudo3_page.robot
+Resource    ./pages/login_page.resource
+Resource    ./pages/estudo3_page.resource
 
 ### hooks ###
-Resource    ./config/hooks.robot
+Resource    ./config/hooks.resource
