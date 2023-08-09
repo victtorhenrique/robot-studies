@@ -23,7 +23,7 @@ jobs:
 
     - name: Run Robot Framework tests
       run: |
-        robot --outputdir ${{ github.workspace }}/logs ${{ github.workspace }}/test/features/  # Define o diretório de saída para os logs
+        robot --outputdir=${{ github.workspace }}/logs ${{ github.workspace }}/test/features/  # Define o diretório de saída para os logs
 
     - name: Copy log files
       run: |
