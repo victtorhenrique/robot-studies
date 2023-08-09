@@ -10,8 +10,7 @@ Acessar pagina inicial the internal
 Validar carregamento pagina
     Wait Until Element Is Visible    ${PAGINA_THE_INTERNET}[campo_texto]
 
-
-Escerver o texto "${texto}"
+Escrever o texto "${texto}"
     Select Frame    ${PAGINA_THE_INTERNET.frame}
     Wait Until Page Contains    ${PAGINA_THE_INTERNET}[texto_do_campo_input]
     Current Frame Should Contain    ${PAGINA_THE_INTERNET}[texto_do_campo_input]

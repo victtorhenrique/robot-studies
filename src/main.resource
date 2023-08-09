@@ -3,6 +3,9 @@ Documentation    Este é o gerenciador de dependências da nossmação
 
 Library     SeleniumLibrary
 Library     DebugLibrary
+Library     OperatingSystem
+Library     String
+Library     ./config/lib/customwebdriver.py
 
 ### keywords ###
 
@@ -17,3 +20,7 @@ Resource    ./pages/estudo3_page.resource
 
 ### hooks ###
 Resource    ./config/hooks.resource
+
+#### Variaveis ########
+*** Variables ***
+${HEADLESS}    ${False}

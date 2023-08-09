@@ -12,4 +12,4 @@ Test Teardown    Fechar navegador
 Cenario 1: Preencher texto iframe
     Acessar pagina inicial the internal
     Validar carregamento pagina
-    Escerver o texto "Robot Framework com Iframes."
+    Escrever o texto "Robot Framework com Iframes."
